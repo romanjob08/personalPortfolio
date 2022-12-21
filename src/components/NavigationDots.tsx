@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavigationDots = ({active}: any) => {
+const NavigationDots: React.FC<{active: string}> = ({ active }) => {
     return (
         <div className="app__navigation">
             {['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map((item, index) => (
@@ -8,7 +8,7 @@ const NavigationDots = ({active}: any) => {
                     href={`#${item}`}
                     key={item + index}
                     className="app__navigation-dot"
-                    style={active === item ? {background: '#313BAC'} : {}}
+                    style={active === item ? {backgroundColor: '#313BAC'} : {}}
                 />
             ))}
         </div>
