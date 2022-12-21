@@ -3,6 +3,7 @@ import {motion} from 'framer-motion';
 
 import './About.scss'
 import {urlFor, client} from "../../client";
+import {AppWrap} from "../../wrapper";
 
 interface Abouts {
     title: string;
@@ -43,4 +44,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AppWrap(About, 'about');
