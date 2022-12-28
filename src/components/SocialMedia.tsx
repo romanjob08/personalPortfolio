@@ -1,18 +1,29 @@
 import React from "react";
-import {BsTwitter, BsInstagram} from 'react-icons/bs';
-import {FaFacebook} from 'react-icons/fa';
+import {BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs';
+import {SiCodewars} from "react-icons/si";
 
 const SocialMedia = () => {
     return (
         <div className="app__social">
             <div>
-                <BsTwitter/>
+                <a href="https://www.linkedin.com/in/roman-mykhasiv-806862255/" target="_blank">
+                    <BsLinkedin/>
+                </a>
             </div>
             <div>
-                <FaFacebook/>
+                <a href="https://www.instagram.com/mykhasivroman/" target="_blank">
+                    <BsInstagram/>
+                </a>
             </div>
             <div>
-                <BsInstagram/>
+                <a href="https://github.com/romanjob08" target="_blank">
+                    <BsGithub/>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.codewars.com/users/%20Last%20Chance" target="_blank">
+                    <SiCodewars/>
+                </a>
             </div>
         </div>
     );
